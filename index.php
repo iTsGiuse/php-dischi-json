@@ -28,10 +28,10 @@
         </header>
         <main>
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="card-group flex-wrap mt-5 mb-5">
-                            <div class="card me-4" v-for="disco in dischi" :key="disco.title">
+                <div class="row flex-wrap">
+                    <div class="col-4" v-for="disco in dischi" :key="disco.title">
+                        <div class="card-group mt-5 mb-5">
+                            <div class="card me-4" >
                                 <img class="card-img-top" :src="disco.poster" alt="{{ disco.title }}">
                                 <div class="card-body text-white text-center">
                                     <h5 class="card-title">  {{ disco.title }} </h5>
@@ -45,8 +45,6 @@
             </div>
         </main>
     </div>
-
-
     <script type="text/javascript" src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
