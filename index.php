@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dischi</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/vue@3"></script>
@@ -16,43 +16,27 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-6">
-                        <div class="box-image">
+                        <div class="ms-box-logo">
                             <img class="img-fluid" src="https://m.media-amazon.com/images/I/51rttY7a+9L.png" alt="logo">
                         </div>
                     </div>
                     <div class="col-6">
-                        <h1>Top album</h1>
+                        <h1 class="text-white">Top album</h1>
                     </div>
                 </div>
             </div>
         </header>
         <main>
             <div class="container">
-                <div class="row flex-wrap">
+                <div class="row">
                     <div class="col">
-                        <div class="card-group mt-5 mb-5">
-                            <div class="card me-4">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body text-white">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                            <div class="card me-4">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body text-white">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                            <div class="card me-4">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body text-white">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        <div class="card-group flex-wrap mt-5 mb-5">
+                            <div class="card me-4" v-for="disco in dischi" :key="disco.title">
+                                <img class="card-img-top" :src="disco.poster" alt="{{ disco.title }}">
+                                <div class="card-body text-white text-center">
+                                    <h5 class="card-title">  {{ disco.title }} </h5>
+                                    <p class="card-text"> {{ disco.author }} </p>
+                                    <p class="card-text"><small> {{ disco.year }} </small></p>
                                 </div>
                             </div>
                         </div>
