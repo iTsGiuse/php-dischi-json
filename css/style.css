@@ -12,6 +12,7 @@ main{
     background-color: #1d2d3c;
 }
 
-/* card{
-    background-color: #112030;
-} */
+.card{
+    background-color: #112030 !important;
+    border-radius: 10px !important;
+}

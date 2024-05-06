@@ -26,7 +26,40 @@
                 </div>
             </div>
         </header>
-        
+        <main>
+            <div class="container">
+                <div class="row flex-wrap">
+                    <div class="col">
+                        <div class="card-group mt-5 mb-5">
+                            <div class="card me-4">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card me-4">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card me-4">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 
 
