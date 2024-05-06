@@ -12,6 +12,20 @@
 <body>
     
     <div id="app">
+        <header>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <div class="box-image">
+                            <img class="img-fluid" src="https://m.media-amazon.com/images/I/51rttY7a+9L.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h1>Top album</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
         
     </div>
 
